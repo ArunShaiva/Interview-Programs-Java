@@ -19,11 +19,9 @@ public class RemoveWhiteSpace {
 	}
 }
 
-
-
 //Using built in function
-/**   
- * public class RemoveWhitespace {
+
+/*	public class RemoveWhiteSpace {
     public static void main(String[] args) {
         String str = "  Hello\t   How\nare you?  ";
 
@@ -33,5 +31,4 @@ public class RemoveWhiteSpace {
         System.out.println("Original string: \"" + str + "\"");
         System.out.println("String after removing whitespace: \"" + result + "\"");
     }
-}
-*/
+}   */

@@ -2,7 +2,7 @@ package basic;
 
 public class RemoveSpecialCharacters {
 	public static void main(String[] args) {
-		String str = "Hello! How are you?";
+		String str = "Hello! How are you? )(*&^%$#@#$%^&*(";
 
 		// Remove special characters without using replaceAll()
 		StringBuilder resultBuilder = new StringBuilder();
