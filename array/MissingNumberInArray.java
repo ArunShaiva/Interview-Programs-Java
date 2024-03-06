@@ -1,4 +1,4 @@
-package basic;
+package array;
 
 public class MissingNumberInArray {
 

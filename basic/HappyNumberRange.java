@@ -1,30 +1,28 @@
 package basic;
 
 public class HappyNumberRange {
+
 	public static void main(String[] args) {
-		System.out.println("Happy numbers within the range of 1 to 100:");
+
 		for (int i = 1; i <= 100; i++) {
-			if (isHappy(i)) {
-				System.out.println(i);
+			int num = i;
+			int temp = num;
+			while (temp != 1 && temp != 4) { // Adding condition for looping
+				temp = sumSqDigit(temp);
+			}
+
+			if (temp == 1) {
+				System.out.print(num + " ");
 			}
 		}
 	}
 
-	public static boolean isHappy(int num) {
-		int slow = num, fast = num;
-		do {
-			slow = sumOfSquaresOfDigits(slow); // Move slow pointer one step
-			fast = sumOfSquaresOfDigits(sumOfSquaresOfDigits(fast)); // Move fast pointer two steps
-		} while (slow != fast); // If there is a cycle, they will meet eventually
-		return slow == 1;
-	}
-
-	public static int sumOfSquaresOfDigits(int num) {
+	public static int sumSqDigit(int n) {
 		int sum = 0;
-		while (num != 0) {
-			int digit = num % 10;
-			sum += digit * digit;
-			num /= 10;
+		while (n > 0) {
+			int rem = n % 10;
+			sum = sum + rem * rem;
+			n = n / 10;
 		}
 		return sum;
 	}

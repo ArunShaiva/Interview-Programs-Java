@@ -20,7 +20,7 @@ public class FrequencyOfElements {
 				freq[i] = count;
 			}
 		}
-		
+
 		System.out.println("Element | Frequency");
 		for (int i = 0; i < freq.length; i++) {
 			if (freq[i] != visited) {
