@@ -1,6 +1,6 @@
 package pattern;
 
-public class Pattern_8 {
+public class Pattern8 {
 
 	public static void main(String[] args) {
 
