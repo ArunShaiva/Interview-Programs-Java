@@ -16,9 +16,15 @@ public class SwapNumbers { // Swapping the variable using third variable
 //		b = a - b;                            //Logic 2
 //		a = a - b;
 
-		a = a * b;
-		b = a / b;
-		a = a / b;
+//		a = a * b;
+//		b = a / b;
+//		a = a / b;
+
+		// Swapping using bitwise operator
+
+		a = a ^ b;
+		b = a ^ b;
+		a = a ^ b;
 
 		System.out.println("After Swapping " + a + " " + b);
 
